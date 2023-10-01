@@ -49,6 +49,13 @@ public class SecurityConfig {
                 		mvcMatcherBuilder.pattern("/cms/user"), 
                 		mvcMatcherBuilder.pattern("/authenticate"),
                 		mvcMatcherBuilder.pattern("/swagger-ui/**"),
+                		mvcMatcherBuilder.pattern("/v2/api-docs"),
+                		mvcMatcherBuilder.pattern("/swagger-resources"),
+                		mvcMatcherBuilder.pattern("/swagger-resources/**"),
+                		mvcMatcherBuilder.pattern("/configuration/ui"),
+                		mvcMatcherBuilder.pattern("/configuration/security"),
+                		mvcMatcherBuilder.pattern("/swagger-ui.html"),
+                		mvcMatcherBuilder.pattern("/v3/api-docs/**"),
                         PathRequest.toH2Console()
                  ).permitAll()
                 .and()
