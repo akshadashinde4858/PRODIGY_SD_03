@@ -72,6 +72,10 @@ public class Contact {
 		this.userid = userid;
 	}
 
+	public Contact(String string, String string2, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public String toString() {
 		return "Contact [contactId=" + contactId + ", name=" + name + ", email=" + email + ", mobile=" + mobile
